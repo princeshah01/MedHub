@@ -1,0 +1,43 @@
+html{
+  scroll-behavior: smooth;
+}
+body {
+    background-color: #1a202c;
+  }
+  .sidebar {
+    transition: transform 0.3s ease-in-out;
+  }
+  .typing-cursor::after {
+    content: "|";
+    animation: blink 1s infinite;
+    color:#8707ff;
+  }
+  .navbar {
+    height: 5rem;
+    background-color: #1F2937;
+    transition: height 0.3s ease;
+  }
+
+  .navbar.scrolled {
+    background-color: #111827;
+    height: 4rem;
+  }
+
+  @keyframes blink {
+    0%,
+    50% {
+      opacity: 1;
+    }
+    51%,
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @media (min-width: 1024px){
+
+    #right_footer{
+      
+      margin-left:20rem;
+    }
+  }
